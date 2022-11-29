@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-cn" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>meoteofence package &mdash; meoteofence 0.1 文档</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
+    <link rel="prev" title="code" href="modules.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> meoteofence
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">code</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">meoteofence package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-meoteofence.hook_impl">meoteofence.hook_impl module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id1">模块介绍</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id2">使用示例</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id3">类说明</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-meoteofence.hook_manager">meoteofence.hook_manager module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-meoteofence.hook_specs">meoteofence.hook_specs module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id4">模块介绍</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id5">使用示例</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id6">类说明</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-meoteofence.interface">meoteofence.interface module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id7">模块介绍</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id8">使用示例</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id9">类说明</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-meoteofence">Module contents</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id10">模块介绍</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id11">使用示例</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id12">类说明</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">meoteofence</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">code</a></li>
+      <li class="breadcrumb-item active">meoteofence package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/meoteofence.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="meoteofence-package">
+<h1>meoteofence package<a class="headerlink" href="#meoteofence-package" title="永久链接至标题">¶</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="永久链接至标题">¶</a></h2>
+</section>
+<section id="module-meoteofence.hook_impl">
+<span id="meoteofence-hook-impl-module"></span><h2>meoteofence.hook_impl module<a class="headerlink" href="#module-meoteofence.hook_impl" title="永久链接至标题">¶</a></h2>
+<section id="id1">
+<h3>模块介绍<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h3>
+<p>这是一个hook技术具体实现类，主要功能提供气象数据预处理具体实现，主要技术hook</p>
+<p>设计模式：</p>
+<blockquote>
+<div><p>（1）  无</p>
+</div></blockquote>
+<p>关键点：</p>
+<blockquote>
+<div><p>（1）hook_impl</p>
+</div></blockquote>
+<p>主要功能：</p>
+<blockquote>
+<div><p>（1）hook技术具体实现</p>
+</div></blockquote>
+</section>
+<section id="id2">
+<h3>使用示例<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h3>
+</section>
+<section id="id3">
+<h3>类说明<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="meoteofence.hook_impl.PretreatmentPlugin">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">meoteofence.hook_impl.</span></span><span class="sig-name descname"><span class="pre">PretreatmentPlugin</span></span><a class="headerlink" href="#meoteofence.hook_impl.PretreatmentPlugin" title="永久链接至目标">¶</a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>类介绍：</p>
+<blockquote>
+<div><p>这是一个预处理具体实现</p>
+</div></blockquote>
+<dl class="py method">
+<dt class="sig sig-object py" id="meoteofence.hook_impl.PretreatmentPlugin.meoteo_pretreatment">
+<span class="sig-name descname"><span class="pre">meoteo_pretreatment</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">variable_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">station_location</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hdf5_store_path_pre</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">resolution_ratio</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">grid_size</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meoteofence.hook_impl.PretreatmentPlugin.meoteo_pretreatment" title="永久链接至目标">¶</a></dt>
+<dd><p>方法功能：</p>
+<blockquote>
+<div><p>定义一个气象预处理的具体实现方法</p>
+</div></blockquote>
+<dl class="simple">
+<dt>参数：</dt><dd><p>file_path (str): 文件路径
+variable_name (str): 变量名称
+station_location (tuple): 场站坐标元组
+hdf5_store_path_pre (str): hdf5存储路径前缀
+resolution_ratio (float): 分辨率
+grid_size (int): 网格大小</p>
+</dd>
+<dt>返回：</dt><dd><p>result (str): 运行结果信息</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+<section id="module-meoteofence.hook_manager">
+<span id="meoteofence-hook-manager-module"></span><h2>meoteofence.hook_manager module<a class="headerlink" href="#module-meoteofence.hook_manager" title="永久链接至标题">¶</a></h2>
+</section>
+<section id="module-meoteofence.hook_specs">
+<span id="meoteofence-hook-specs-module"></span><h2>meoteofence.hook_specs module<a class="headerlink" href="#module-meoteofence.hook_specs" title="永久链接至标题">¶</a></h2>
+<section id="id4">
+<h3>模块介绍<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h3>
+<p>这是一个hook技术接口类，主要功能提供气象数据预处理接口，主要技术hook</p>
+<p>设计模式：</p>
+<blockquote>
+<div><p>（1）  无</p>
+</div></blockquote>
+<p>关键点：</p>
+<blockquote>
+<div><p>（1）hook_specs</p>
+</div></blockquote>
+<p>主要功能：</p>
+<blockquote>
+<div><p>（1）hook技术接口</p>
+</div></blockquote>
+</section>
+<section id="id5">
+<h3>使用示例<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h3>
+</section>
+<section id="id6">
+<h3>类说明<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="meoteofence.hook_specs.PretreatmentSpec">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">meoteofence.hook_specs.</span></span><span class="sig-name descname"><span class="pre">PretreatmentSpec</span></span><a class="headerlink" href="#meoteofence.hook_specs.PretreatmentSpec" title="永久链接至目标">¶</a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>类介绍：</p>
+<blockquote>
+<div><p>这是一个预处理接口类</p>
+</div></blockquote>
+<dl class="py method">
+<dt class="sig sig-object py" id="meoteofence.hook_specs.PretreatmentSpec.meoteo_pretreatment">
+<span class="sig-name descname"><span class="pre">meoteo_pretreatment</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">variable_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">station_location</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hdf5_store_path_pre</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">resolution_ratio</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">grid_size</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meoteofence.hook_specs.PretreatmentSpec.meoteo_pretreatment" title="永久链接至目标">¶</a></dt>
+<dd><p>方法功能：</p>
+<blockquote>
+<div><p>定义一个气象预处理的接口方法</p>
+</div></blockquote>
+<dl class="simple">
+<dt>参数：</dt><dd><p>file_path (str): 文件路径
+variable_name (str): 变量名称
+station_location (tuple): 场站坐标元组
+hdf5_store_path_pre (str): hdf5存储路径前缀
+resolution_ratio (float): 分辨率
+grid_size (int): 网格大小</p>
+</dd>
+<dt>返回：</dt><dd><p>无</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+<section id="module-meoteofence.interface">
+<span id="meoteofence-interface-module"></span><h2>meoteofence.interface module<a class="headerlink" href="#module-meoteofence.interface" title="永久链接至标题">¶</a></h2>
+<section id="id7">
+<h3>模块介绍<a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h3>
+<p>这是一个meoteofence对外接口封装类，主要功能对外提供封装好接口。</p>
+<p>设计模式：</p>
+<blockquote>
+<div><p>（1）  无</p>
+</div></blockquote>
+<p>关键点：</p>
+<blockquote>
+<div><p>（1）接口封装</p>
+</div></blockquote>
+<p>主要功能：</p>
+<blockquote>
+<div><p>（1）对外提供封装接口</p>
+</div></blockquote>
+</section>
+<section id="id8">
+<h3>使用示例<a class="headerlink" href="#id8" title="永久链接至标题">¶</a></h3>
+</section>
+<section id="id9">
+<h3>类说明<a class="headerlink" href="#id9" title="永久链接至标题">¶</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="meoteofence.interface.Meoteodata">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">meoteofence.interface.</span></span><span class="sig-name descname"><span class="pre">Meoteodata</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">base_folder_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hdf5_store_path_pre</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">station_location</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">variable_name_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">resolution_ratio</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">grid_size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_jobs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meoteofence.interface.Meoteodata" title="永久链接至目标">¶</a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>类介绍:</p>
+<blockquote>
+<div><p>这是一个气象数据对象类,主要功能提供气象相关处理操作</p>
+</div></blockquote>
+<dl class="py method">
+<dt class="sig sig-object py" id="meoteofence.interface.Meoteodata.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#meoteofence.interface.Meoteodata.run" title="永久链接至目标">¶</a></dt>
+<dd><p>属性功能：</p>
+<blockquote>
+<div><p>定义一个初始化属性的方法</p>
+</div></blockquote>
+<dl class="simple">
+<dt>参数：</dt><dd><p>base_folder_path (str): 预处理数据目标文件夹
+hdf5_store_path_pre (str): hdf5存储路径前缀
+station_location (tuple): 场站坐标元组
+variable_name_list (list): 气象物理量列表
+resolution_ratio (float): 分辨率
+grid_size (int): 网格大小
+n_jobs (int): 并行个数</p>
+</dd>
+<dt>返回：</dt><dd><p>result (str): 运行结果信息,包含运行时间信息</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="meoteofence.interface.data_drill_up">
+<span class="sig-prename descclassname"><span class="pre">meoteofence.interface.</span></span><span class="sig-name descname"><span class="pre">data_drill_up</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hdf5_store_path_pre</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">variable_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">level_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">forecast_time</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meoteofence.interface.data_drill_up" title="永久链接至目标">¶</a></dt>
+<dd><p>方法功能：</p>
+<blockquote>
+<div><p>定义一个从指定日期HDF5文件夹中进行数据上钻查询的方法，以预报时间为行索引，以变量和层级组合为列索引。</p>
+</div></blockquote>
+<dl class="simple">
+<dt>参数：</dt><dd><p>hdf5_store_path_pre (str): hdf5存储路径前缀
+variable_name_list (str): 气象物理量
+level_name (str): 层级名称
+forecast_time (int): 预报时间长度</p>
+</dd>
+<dt>返回：</dt><dd><p>tmp_concat_df (DataFrame): 组合拼接好的数据集合</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="meoteofence.interface.data_interpolate">
+<span class="sig-prename descclassname"><span class="pre">meoteofence.interface.</span></span><span class="sig-name descname"><span class="pre">data_interpolate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_concat_df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">index_delta</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kind</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meoteofence.interface.data_interpolate" title="永久链接至目标">¶</a></dt>
+<dd><p>函数功能：</p>
+<blockquote>
+<div><p>定义一个针对气象数据进行插值的函数</p>
+</div></blockquote>
+<dl class="simple">
+<dt>参数：</dt><dd><p>tmp_concat_df (dataframe): 拼接好的数据集合
+index_delta (float): 索引间隔
+kind (str): 插值方法</p>
+</dd>
+<dt>返回：</dt><dd><p>tmp_interpolate_df (dataframe): 插值完成的数据集合</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="meoteofence.interface.secondary_api_meoteo_pretreatment">
+<span class="sig-prename descclassname"><span class="pre">meoteofence.interface.</span></span><span class="sig-name descname"><span class="pre">secondary_api_meoteo_pretreatment</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">variable_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">station_location</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hdf5_store_path_pre</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">resolution_ratio</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">grid_size</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meoteofence.interface.secondary_api_meoteo_pretreatment" title="永久链接至目标">¶</a></dt>
+<dd><p>方法功能：</p>
+<blockquote>
+<div><p>定义一个气象预处理的二级API</p>
+</div></blockquote>
+<dl class="simple">
+<dt>参数：</dt><dd><p>file_path (str): 预处理数据目标文件夹
+hdf5_store_path_pre (str): hdf5存储路径前缀
+station_location (tuple): 场站坐标元组
+variable_name_list (list): 气象物理量列表
+resolution_ratio (float): 分辨率
+grid_size (int): 网格大小</p>
+</dd>
+<dt>返回：</dt><dd><p>result (str): 运行结果信息</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+</section>
+<section id="module-meoteofence">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-meoteofence" title="永久链接至标题">¶</a></h2>
+<section id="id10">
+<h3>模块介绍<a class="headerlink" href="#id10" title="永久链接至标题">¶</a></h3>
+<p>这是一个包入口文件，主要功能收集各种工具函数，主要技术__all__暴露指定函数</p>
+<p>设计模式：</p>
+<blockquote>
+<div><p>（1）  无</p>
+</div></blockquote>
+<p>关键点：</p>
+<blockquote>
+<div><p>（1）__all__</p>
+</div></blockquote>
+<p>主要功能：</p>
+<blockquote>
+<div><p>（1）基础操作工具集合</p>
+</div></blockquote>
+</section>
+<section id="id11">
+<h3>使用示例<a class="headerlink" href="#id11" title="永久链接至标题">¶</a></h3>
+</section>
+<section id="id12">
+<h3>类说明<a class="headerlink" href="#id12" title="永久链接至标题">¶</a></h3>
+<dl class="py function">
+<dt class="sig sig-object py" id="meoteofence.combine_variable_and_levels">
+<span class="sig-prename descclassname"><span class="pre">meoteofence.</span></span><span class="sig-name descname"><span class="pre">combine_variable_and_levels</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">variable_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">variable_level_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meoteofence.combine_variable_and_levels" title="永久链接至目标">¶</a></dt>
+<dd><p>函数功能：</p>
+<blockquote>
+<div><p>定义一个组合变量与层级的函数</p>
+</div></blockquote>
+<dl class="simple">
+<dt>参数：</dt><dd><p>variable_name (str): 变量名称
+variable_level_list (list): 层级列表</p>
+</dd>
+<dt>返回：</dt><dd><p>variable_level_combine_list (list): 变量层级组合列表</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="meoteofence.convert_matrix_to_list">
+<span class="sig-prename descclassname"><span class="pre">meoteofence.</span></span><span class="sig-name descname"><span class="pre">convert_matrix_to_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">locations</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meoteofence.convert_matrix_to_list" title="永久链接至目标">¶</a></dt>
+<dd><p>函数功能：</p>
+<blockquote>
+<div><p>定义一个将坐标信息转换为两个列表和坐标元组列表的函数</p>
+</div></blockquote>
+<dl class="simple">
+<dt>参数：</dt><dd><p>locations (object): pygrib获取的坐标信息</p>
+</dd>
+<dt>返回：</dt><dd><p>longitude (list): 纬度列表
+latitude (list): 经度列表
+longitude_latitude_list (list): 经纬度列表</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="meoteofence.form_base_coordinate">
+<span class="sig-prename descclassname"><span class="pre">meoteofence.</span></span><span class="sig-name descname"><span class="pre">form_base_coordinate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">upleft_standard_location</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">resolution_ratio</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">grid_size</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meoteofence.form_base_coordinate" title="永久链接至目标">¶</a></dt>
+<dd><p>函数功能：</p>
+<blockquote>
+<div><p>定义一个对应形成矩阵的函数</p>
+</div></blockquote>
+<dl class="simple">
+<dt>参数：</dt><dd><p>upleft_standard_location (tuple): 左上标准点位
+resolution_ratio (float): 网格分辨率
+grid_size (int): 网格大小</p>
+</dd>
+<dt>返回：</dt><dd><p>upleft_grid_location (tuple): 目标网格左上点位
+upright_grid_location (tuple): 目标网格右上点位
+downleft_grid_location (tuple): 目标网格左下点位
+downright_grid_location (tuple): 目标网格右下点位</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="meoteofence.get_coordinate_pairs_according_to_station">
+<span class="sig-prename descclassname"><span class="pre">meoteofence.</span></span><span class="sig-name descname"><span class="pre">get_coordinate_pairs_according_to_station</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">longitude_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">latitude_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">station_location</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meoteofence.get_coordinate_pairs_according_to_station" title="永久链接至目标">¶</a></dt>
+<dd><p>函数功能：</p>
+<blockquote>
+<div><p>定义一个以场站坐标为依据从两列表中选取坐标对的函数</p>
+</div></blockquote>
+<dl class="simple">
+<dt>参数：</dt><dd><p>longitude_list (list): 经度列表
+latitude_list (list): 纬度列表
+station_location (tuple): 场站坐标元组</p>
+</dd>
+<dt>返回：</dt><dd><p>upleft_standard_location (tuple): 选取的左上标准点位
+resolution_ratio (float): 网格分辨率</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="meoteofence.hdf5_read_ndarray">
+<span class="sig-prename descclassname"><span class="pre">meoteofence.</span></span><span class="sig-name descname"><span class="pre">hdf5_read_ndarray</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">h5path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">level_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meoteofence.hdf5_read_ndarray" title="永久链接至目标">¶</a></dt>
+<dd><p>函数功能：</p>
+<blockquote>
+<div><p>定义一个hdf5读取数据的方法</p>
+</div></blockquote>
+<dl class="simple">
+<dt>参数：</dt><dd><p>h5path (str): hdf5文件路径
+var_name (str): 气象物理量名称，对应HDF5的组名称
+level_name (str): 气象空间维度层级名称，对应HDF5的数据集合名称</p>
+</dd>
+<dt>返回：</dt><dd><p>ndarray_obj (numpy.ndarray): numpy的ndarray矩阵数据对象</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="meoteofence.hdf5_write_ndaray">
+<span class="sig-prename descclassname"><span class="pre">meoteofence.</span></span><span class="sig-name descname"><span class="pre">hdf5_write_ndaray</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">h5path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">level_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ndarray_obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meoteofence.hdf5_write_ndaray" title="永久链接至目标">¶</a></dt>
+<dd><p>函数功能：</p>
+<blockquote>
+<div><p>定义一个将ndarray写入H5文件的方法</p>
+</div></blockquote>
+<dl class="simple">
+<dt>参数：</dt><dd><p>h5path (str): hdf5文件路径
+var_name (str): 气象物理量名称，对应HDF5的组名称
+level_name (str): 气象空间维度层级名称，对应HDF5的数据集合名称
+ndarray_obj (numpy.ndarray): numpy的ndarray矩阵数据对象</p>
+</dd>
+<dt>返回：</dt><dd><p>result (str): 运行结果信息</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="meoteofence.obtain_data_and_cache_to_hdf5">
+<span class="sig-prename descclassname"><span class="pre">meoteofence.</span></span><span class="sig-name descname"><span class="pre">obtain_data_and_cache_to_hdf5</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">grbs_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">variable_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">variable_level_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hdf5_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">upleft_grid_location</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">upright_grid_location</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">downleft_grid_location</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">downright_grid_location</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#meoteofence.obtain_data_and_cache_to_hdf5" title="永久链接至目标">¶</a></dt>
+<dd><p>函数功能：</p>
+<blockquote>
+<div><p>定义一个获取数据并缓存到HDF5中的函数</p>
+</div></blockquote>
+<dl class="simple">
+<dt>参数：</dt><dd><p>grbs_obj (object): grbs对象
+variable_name (str): 气象物理量名称
+variable_level_list (list): 变量层级列表
+hdf5_name (str): hdf5文件名称
+upleft_grid_location (tuple): 左上基准点位
+upright_grid_location (tuple): 右上基准点位
+downleft_grid_location (tuple): 左下基准点位
+downright_grid_location (tuple): 右下基准点位</p>
+</dd>
+<dt>返回：</dt><dd><p>result (str): 运行结果信息</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="modules.html" class="btn btn-neutral float-left" title="code" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 2022, shihua.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

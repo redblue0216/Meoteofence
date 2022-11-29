@@ -1,0 +1,28 @@
+====
+设计
+====
+	* 基于pluggy的hook技术实现灵活扩展性
+	* 基于HDF5存储解析后数据，提高数据IO速度
+	* 基于multiprocessing实现异步非阻塞并行
+
+
+
+技术列表
+--------
+
+	* HDF5存储技术
+	* 基于pluggy的hook技术
+	* 气象专用pygrib
+	* multiprocessing异步非阻塞并行
+	* 静态方法
+	* __all__
+
+
+
+设计UML图
+---------
+
+以下是设计的UML图：
+
+.. image:: Meoteofence.png
+	

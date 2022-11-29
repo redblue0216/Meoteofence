@@ -1,0 +1,3 @@
+include meoteofence/doc/README.mdown
+include meoteofence/meoteofence_config.yaml
+graft meoteofence/test

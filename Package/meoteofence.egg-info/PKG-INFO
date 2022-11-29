@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: meoteofence
+Version: 0.1
+Summary: Meoteofence is a preprocessing program for numerical weather forecasting, which is mainly used to segment the original meteorological data according to the five dimensions of starting time, prediction time, spatial hierarchy, meteorological physical quantities and station coordinate grid. The main technology uses HDF5 to organize the matrix data after analysis, uses hook technology to organize the code, and adds parallel processing at the prediction time level.
+Author: shihua
+Author-email: hua.shi@meritech-data.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.9.12
+
+UNKNOWN
+

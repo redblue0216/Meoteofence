@@ -1,0 +1,8 @@
+====
+安装
+====
+meoteofence采用Python开发，得益于Python良好的社区环境，安装支持Pythonic风格的各种管理器。
+
+.. code-block:: Bash
+	
+	$pip install meoteofence-0.1-xxxxxxxxxxxx.whl

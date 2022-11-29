@@ -1,0 +1,102 @@
+========
+快速指南
+========
+
+python-sdk使用
+==============
+meoteofence提供python-sdk的使用方式
+
+以下是meoteofence主程脚本示例：
+
+.. code-block:: python
+
+	from meoteofence.interface import Meoteodata,data_drill_up,data_interpolate
+	from meoteofence import hdf5_read_ndarray
+	import pandas as pd
+	import numpy as np
+
+
+
+	### 第一步：原始气象数据抽取解析（一般一天执行一次，没有重复执行必要，可以跑批的方式预先执行完成）
+	### 一次执行多个文件夹
+	folders = ['20221123','20221124']
+	for tmp_folder in folders:
+	    ### 创建气象数据对象
+	    ### 配置初始参数，生成气象数据处理对象
+	    meoteodata = Meoteodata(base_folder_path='./data/{}/'.format(tmp_folder),
+	                            hdf5_store_path_pre = './data_handled/{}/'.format(tmp_folder),
+	                            station_location = (35.23,95.24),
+	                            variable_name_list = ['Temperature','Relative humidity','Total Cloud Cover','Wind speed (gust)'],
+	                            resolution_ratio = 0.25,
+	                            grid_size = 6,
+	                            n_jobs = 24)
+	    ### 开始执行气象预处理程序
+	    result = meoteodata.run()
+	    # result = meoteodata.run(func=secondary_api_meoteo_pretreatment) 
+	    print(result)
+
+
+	## 第二步：从气象抽取解析结果中进行上钻操作，并整合出96时间点位的气象物理量（该步骤为频繁使用步骤，基于HDF5保证数据读取速度）
+	## 测试结果
+	### 从指定h5中读取对应ndarray数据（此步骤为一级API，一般不使用，为更高级自定义操作提供支持）
+	variable_name = 'Wind speed (gust)'#'#'Temperature' # 'Wind speed (gust)'
+	tmp_ndarray = hdf5_read_ndarray(h5path='./data_handled/20221124/f23.h5',var_name=variable_name,level_name='level_0') # level_100_m
+	print(tmp_ndarray)
+
+
+	### 根据变量和层级对指定文件夹下的数据进行上钻操作
+	tmp_concat_df_a = data_drill_up(hdf5_store_path_pre='./data_handled/20221123/',
+	                                 variable_name = 'Wind speed (gust)',
+	                                 level_name = 'level_0',
+	                                 forecast_time = 24)
+	tmp_concat_df_b = data_drill_up(hdf5_store_path_pre='./data_handled/20221124/',
+	                                 variable_name = 'Wind speed (gust)',
+	                                 level_name = 'level_0',
+	                                 forecast_time = 24)
+	tmp_concat_df = pd.concat([tmp_concat_df_a,tmp_concat_df_b],axis=0)
+	tmp_concat_df = tmp_concat_df.reset_index(drop=True)
+
+
+	### 对目标数据集合进行内插值
+	tmp_interpolate_df = data_interpolate(tmp_concat_df=tmp_concat_df,index_delta=0.25,kind='linear')
+	tmp_target_df = tmp_interpolate_df.iloc[:96,:]
+	print(tmp_target_df)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
